@@ -2,6 +2,7 @@ const router = require('express').Router();
 
 const { Film } = require('../../db');
 const { json } = require('sequelize');
+const { route } = require('../api');
 
 /**
  * index
@@ -14,6 +15,12 @@ router.get('/', async (req, res) => {
 /**
  * Show
  */
+router.get('/:id', async(req, res) => {
+
+    const film = await Film.findByPk(2);
+    console.log(req.params.id)
+    res.json(film);
+})
 
 
 /**
