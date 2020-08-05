@@ -48,7 +48,4 @@ router.delete('/:id', async (req, res)=> {
     res.json({success: 'se a borrado la pelicula'});
 })
 
-
-
-
 module.exports = router;
