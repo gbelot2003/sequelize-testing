@@ -2,7 +2,6 @@ const router = require('express').Router();
 
 const { Film } = require('../../db');
 const { json } = require('sequelize');
-const { route } = require('../api');
 
 /**
  * index
